@@ -1,7 +1,6 @@
 
 <img src="https://github.com/WahomeKezia/Assets/blob/main/2.png" title="logo" alt="Logo" width="100" height="100"/>
-A disease predicting model deployed on Azure  
-
+ 
 ## Introudction
 Disease prediction based on symptoms using machine learning has become an increasingly
 popular area of research due to the advancement of technology and the availability of medical
