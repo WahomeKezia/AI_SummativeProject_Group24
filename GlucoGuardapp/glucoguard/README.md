@@ -3,9 +3,11 @@ This project was is created with reactjs . It is a simple webpage that users can
 We are using our classifer model to determine the project. Kindly refer to the Project readme for more info. 
 
 ---
+
 #User accessibility 
 The users shall access the app in any browser . 
 We have deployed the app on Azure Cloud , it is available [here]()
+
 ---
 #Developer 
 In the project directory, you can run:
