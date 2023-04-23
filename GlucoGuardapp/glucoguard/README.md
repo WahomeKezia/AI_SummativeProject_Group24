@@ -1,5 +1,5 @@
 # Getting Started with Glucoguard App
-This project was is created with reactjs . It is a simple webpage that users can interact with and get their prediction , if they are diabetic or not 
+This project was is created with reactjs . It is a simple webpage that users can interact with and get their prediction , if they are diabetic or not. 
 We are using our classifer model to determine the project. Kindly refer to the Project readme for more info. 
 
 ---
