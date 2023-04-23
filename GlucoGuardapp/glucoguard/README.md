@@ -4,12 +4,14 @@ We are using our classifer model to determine the project. Kindly refer to the P
 
 ---
 
-#User accessibility 
+# User accessibility 
+
 The users shall access the app in any browser . 
 We have deployed the app on Azure Cloud , it is available [here]()
 
 ---
-#Developer 
+# Developer 
+
 In the project directory, you can run:
 
 `npm start`
