@@ -32,12 +32,14 @@ developing type 2 diabetes, allowing for early intervention and prevention measu
 #### Objectives:
 ● Develop a machine learning model that can accurately predict diseases based on
 symptoms reported by the patient.
+
 ● Evaluate the performance of the model using real-world patient data.
 
 ● Optimize the model to improve its accuracy and efficiency.
 
 ● Implement the model into a user-friendly Web page that patients can easily access and
 use.
+
 ● Deploy the web page on Azure App services 
 
 
