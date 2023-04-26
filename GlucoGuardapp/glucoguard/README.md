@@ -3,7 +3,6 @@ This project was is created with reactjs . It is a simple webpage that users can
 We are using our classifer model to determine the project. Kindly refer to the Project readme for more info. 
 
 ---
-
 # User accessibility 
 
 The users shall access the app in any browser . 
