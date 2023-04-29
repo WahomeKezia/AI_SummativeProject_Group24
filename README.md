@@ -21,11 +21,12 @@ symptoms reported by the patient.
 use.
 
 ● Deploy the web page on Azure App services 
-###Technologies Used :
 
-###Access:
+### Technologies Used :
 
-###Video Walkthrough:
+### Access:
+
+### Video Walkthrough:
 
 
 
