@@ -5,7 +5,8 @@
   
   3.To clone the repository to your local machine use this command.
   
-    git clone 
+  
+    git clone https://github.com/WahomeKezia/AI_SummartiveProject_Group24.git
   
   4.Navigate to the directory of the cloned repository.use this command 
   
