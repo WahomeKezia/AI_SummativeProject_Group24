@@ -5,19 +5,20 @@
   
   3.To clone the repository to your local machine use this command.
   
-    git clone https://github.com/teamAfyaTechs/TeamAfyaTechs-Frontend.git
+    git clone 
   
   4.Navigate to the directory of the cloned repository.use this command 
   
-    cd TeamAfyaTechs-Frontend
+    cd GlucoGuardapp
   
   5.Install the dependencies of the project. Use 
+   
   
     npm install 
     
   or
   
-    yarn install 
+     npm install --global yarn
     
   if your using yarn package manager
   
@@ -29,4 +30,3 @@
   
     yarn run dev 
   
-  since i'm are using vite to create our react-app
