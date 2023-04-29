@@ -9,7 +9,7 @@ methods rely on invasive tests and can be time-consuming and costly, leading to 
 treatment and poor health outcomes. Therefore, there is a need for a predictive tool that can use
 demographic and lifestyle information to accurately identify individuals who are at risk of
 developing type 2 diabetes, allowing for early intervention and prevention measures.
-#### Objectives:
+#### Objectives for this project :
 ● Develop a machine learning model that can accurately predict diseases based on
 symptoms reported by the patient.
 
