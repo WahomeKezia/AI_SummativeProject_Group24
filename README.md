@@ -13,12 +13,12 @@ developing type 2 diabetes, allowing for early intervention and prevention measu
 
 #### Objectives for this project :
 
-● Develop a machine learning model that can accurately predict diseases based on
-symptoms reported by the patient.
+● Develop a machine learning model that can accurately predict Type2 Diabetes based on
+data given by the patient.
 
 ● Evaluate the performance of the model using real-world patient data.
 
-● Deploy the Machine Learning Model  to Azure so that it is easily accessible through a web domain .
+● Deploy the Machine Learning Model to Azure so that it is easily accessible through a web domain .
 
 ● Use the deployed Model as an API to a user-friendly Web page that patients can easily access and
 use.
@@ -30,7 +30,7 @@ use.
 
 ● Python for Model Training and Flask App 
 
-● ReactJs for the frontend Application 
+● ReactJs for the frontend Interface  
 
 ● Azure app service for cloud Deployment 
 
@@ -40,7 +40,7 @@ There are two part to this project ,
 
 1. Frontend Reactapp
 
-See the App Readme for informantion 
+See the App [Readme ](https://github.com/WahomeKezia/AI_SummativeProject_Group24/tree/main/GlucoGuardapp) for informantion 
 
 2. Flaskapp  -the ML API  [here](https://github.com/WahomeKezia/FlaskApp_API)
 
@@ -58,7 +58,7 @@ To run the Flask App use this commands
  ### Deployed Access:
  
 
-Access the deployedapp [here](https://flaskappdiabetics.azurewebsites.net/)
+Access the deployed ML API [here](https://flaskappdiabetics.azurewebsites.net/)
 
 
 ---
