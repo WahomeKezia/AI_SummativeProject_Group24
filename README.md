@@ -41,7 +41,7 @@ There are two part to this project ,
 
 See the App Readme for informantion 
 
-2. Backend Flaskapp for predict endpoints [here] <https://github.com/WahomeKezia/FlaskApp_API>
+2. Backend Flaskapp for predict endpoints [here](https://github.com/WahomeKezia/FlaskApp_API)
 
 To run the backend Flask App use this commands 
 
@@ -51,7 +51,7 @@ To run the backend Flask App use this commands
  
  This will run the application locally 
 
-Or acces the deployed version []< >
+Or acces the deployed version [here]()
 
  
  
