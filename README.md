@@ -33,7 +33,6 @@ use.
 ● Azure app service for cloud Deployment 
 
 ---
-### Local Access:
 
 There are two part to this project , 
 
@@ -41,24 +40,24 @@ There are two part to this project ,
 
 See the App Readme for informantion 
 
-2. Backend Flaskapp for predict endpoints [here](https://github.com/WahomeKezia/FlaskApp_API)
+2. Flaskapp  -the ML API  [here](https://github.com/WahomeKezia/FlaskApp_API)
 
-To run the backend Flask App use this commands 
+To run the Flask App use this commands 
 
 `git clone https://github.com/WahomeKezia/FlaskApp_API`
+
  `pip install gunicorn`
+ 
  `gunicorn wsgi:app`
  
  This will run the application locally 
  
- ---
  
- ### Local Access:
+ ### Deployed Access:
  
 
-Access the deployed version app [here](https://flaskappdiabetics.azurewebsites.net/)
+Access the deployedapp [here](https://flaskappdiabetics.azurewebsites.net/)
 
- 
 
 ---
 ### Video Walkthrough:
