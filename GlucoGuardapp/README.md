@@ -4,29 +4,19 @@
   2.Open a terminal and navigate to the directory where you want to clone the repository.
   
   3.To clone the repository to your local machine use this command.
-  
-    git clone https://github.com/teamAfyaTechs/TeamAfyaTechs-Frontend.git
+    `git clone https://github.com/WahomeKezia/AI_SummartiveProject_Group24.git`
   
   4.Navigate to the directory of the cloned repository.use this command 
-  
-    cd TeamAfyaTechs-Frontend
+   ` cd GlucoGuardapp`
   
   5.Install the dependencies of the project. Use 
-  
-    npm install 
-    
+    `npm install `
   or
-  
-    yarn install 
-    
+    ` npm install --global yarn` 
   if your using yarn package manager
   
   6.Start the server. Use 
-    
-    npm run dev 
-    
+   ` npm run dev `
   or 
+   ` yarn run dev` 
   
-    yarn run dev 
-  
-  since i'm are using vite to create our react-app
