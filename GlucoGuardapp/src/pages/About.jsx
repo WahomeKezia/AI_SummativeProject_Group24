@@ -11,7 +11,7 @@ function About() {
             <div className="hero-content text-center">
               <div className="max-w-screen">
                 <h1 className="text-5xl font-bold text-warning">Why Us</h1>
-                <p className="py-6 md:text-xl sm:text-xl">MediTrack is a comprehensive health record keeping system designed exclusively for medical professionals. Our easy-to-use platform provides you with all the tools you need to access and manage your patients' health records with ease</p>
+                <p className="py-6 md:text-xl sm:text-xl">GlucoGuard offers free prediction services with 98% accuracy , that help you moniter your Blood  Sugar levels and get you diabetic status. We value you privacy and we don't ask for sensitive  personal information .</p>
               </div>
             </div>
           </div>
@@ -24,7 +24,7 @@ function About() {
             <div className="hero-content text-center">
               <div className="max-w-screen">
                 <h1 className="text-5xl font-bold text-warning">Our Mission</h1>
-                <p className="py-6 md:text-xl sm:text-xl">At MediTrack, we are committed to ensuring the confidentiality and security of patient information. Our platform uses the latest encryption technology to keep all data safe and secure.</p>
+                <p className="py-6 md:text-xl sm:text-xl">To ensure that our users are able to get their sugar level status just by two simple steps.Fill in revalant information , click submit and get your prediction</p>
               </div>
             </div>
           </div>
@@ -36,7 +36,7 @@ function About() {
             <div className="hero-content text-center">
               <div className="max-w-screen">
                 <h1 className="text-5xl font-bold text-warning">Our Vision</h1>
-                <p className="py-6 md:text-xl sm:text-xl">At MediTrack, our vision is to empower medical professionals with the tools they need to provide the best possible care to their patients. We believe that by streamlining the process of managing patient records, we can help medical professionals focus on what matters most - their patients' health and well-being.</p>
+                <p className="py-6 md:text-xl sm:text-xl">To enable our users free access to our AI tool and accurate test results just by a click .</p>
               </div>
             </div>
           </div>
@@ -54,8 +54,8 @@ function About() {
           <div>
             <span className="footer-title">Links</span>
             <a className="link link-hover" href='/'>Home</a>
-            <a className="link link-hover" href='/register'>Register</a>
-            <a className="link link-hover" href='/login'>Login</a>
+            <a className="link link-hover" href='/test'>Get your test</a>
+            <a className="link link-hover" href='/results'>See you results</a>
           </div>
         </footer>
       </div>

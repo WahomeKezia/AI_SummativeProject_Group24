@@ -12,20 +12,21 @@ function Test() {
   const [imgUploadMsg, setImgUploadMsg] = useState(null);
   const [successMgs, setSuccessMgs] = useState(null);
   const [file, setFile] = useState(null);
+
   const navigate = useNavigate();
 
-  const RegisterMutation = useMutation({
-    mutationFn: async (data) => {
-      wretch(`${DeployedURL}/users/register`)
-        .post(data).json()
-        .then((data) => {
-          setSuccessMgs(data);
-          setTimeout(() => setSuccessMgs(false), 4000);
-          navigate(`/login`);
-        })
-        .catch(error => { setError(error); setTimeout(() => setError(false), 3000); })
-    }
-  })
+const RegisterMutation = useMutation({
+  mutationFn: async (data) => {
+    // wretch(`${DeployedURL}/test`)
+    //   .post(data).json()
+    //   .then((data) => {
+        setSuccessMgs(data);
+        setTimeout(() => setSuccessMgs(false), 4000);
+        navigate('/results'); // navigate to the results page
+      //})
+     // .catch(error => { setError(error); setTimeout(() => setError(false), 3000); })
+  }
+})
 
   const onSubmit = async (data) => {
     RegisterMutation.mutate(data);
@@ -68,42 +69,32 @@ function Test() {
               </div>
               <div className="card-body md:flex-row sm:flex-col lg:flex-row">
                 <div>
-                  <label className="label"><span className="label-text">Full Names</span></label>
-                  <input type="text" {...register("name", { required: true })} placeholder="Enter your names" className="input input-bordered " />
-                  {errors.name?.type === 'required' && <p className="label-text-alt text-red-400 pt-2">fullname is required 😶</p>}
-                  <label className="label"><span className="label-text">Email</span></label>
-                  <input {...register("email", { required: true, pattern: /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?(?:\.[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?)*$/ })} type="text" placeholder="Enter your email" className="input input-bordered" />
-                  {errors.email?.type === 'required' && <p className="label-text-alt text-red-400 pt-2">email is required 😶</p>}{errors.email?.type === 'pattern' && <p className="label-text-alt text-red-400 pt-2">invalid email😶</p>}
-                  <label className="label"><span className="label-text">Phone</span></label>
-                  <input {...register("phone", { required: true, })} type="text" placeholder="Enter your Phone no:" className="input input-bordered" />
-                  {errors.phone?.type === 'required' && <p className="label-text-alt text-red-400 pt-2">phone is required 😶</p>}{errors.phone?.type === 'pattern' && <p className="label-text-alt text-red-400 pt-2">invalid phone</p>}
-                </div>
-                <div className='md:ml-4 lg:ml-4'>
-                  <label className="label"><span className="label-text">Gender</span></label>
-                  <select {...register("gender", { required: true })} className="select select-bordered w-full max-w-xs">
-                    <option selected disabled value="" >Select your gender</option>
-                    <option value="male">Male</option>
-                    <option value="female">Female</option>
-                    <option value="other">Other</option>
-                  </select>
-                  {errors.gender?.type === 'required' && <p className="label-text-alt text-red-400 pt-2">gender is required 😶</p>}
+                <label className="label"><span className="label-text">Age</span></label>
+<input {...register("age", { required: true, min: 1 })} type="number" placeholder="Enter your age" className="input input-bordered" />
+{errors.age?.type === 'required' && <p className="label-text-alt text-red-400 pt-2">Age is required 😶</p>}{errors.age?.type === 'min' && <p className="label-text-alt text-red-400 pt-2">Age must be a positive number</p>}
 
-                  <label className="label"><span className="label-text">Medical level</span></label>
-                  <select {...register("medical_level", { required: true })} className="select select-bordered w-full max-w-xs">
-                    <option selected disabled value="">Select level</option>
-                    <option value="Doctor">Doctor</option>
-                    <option value="Nurses">Nurse</option>
-                    <option value="Sergon">Surgon</option>
-                  </select>
-                  {errors.medical_level?.type === 'required' && <p className="label-text-alt text-red-400 pt-2">medical level is required 😶</p>}
-                  <label className="label"><span className="label-text">Password</span></label>
-                  <input type="text" {...register("password", { required: true })} placeholder="Choose your Password" className="input input-bordered " />
-                  {errors.password?.type === 'required' && <p className="label-text-alt text-red-400 pt-2">password is required 😶</p>}
+<label className="label"><span className="label-text">BMI</span></label>
+<input {...register("bmi", { required: true, min: 1 })} type="number" placeholder="Enter your BMI" className="input input-bordered" />
+{errors.bmi?.type === 'required' && <p className="label-text-alt text-red-400 pt-2">BMI is required 😶</p>}{errors.bmi?.type === 'min' && <p className="label-text-alt text-red-400 pt-2">BMI must be a positive number</p>}
+
+<label className="label"><span className="label-text">Blood Pressure</span></label>
+<input {...register("bloodPressure", { required: true, min: 1 })} type="number" placeholder="Enter your blood pressure" className="input input-bordered" />
+{errors.bloodPressure?.type === 'required' && <p className="label-text-alt text-red-400 pt-2">Blood pressure is required 😶</p>}{errors.bloodPressure?.type === 'min' && <p className="label-text-alt text-red-400 pt-2">Blood pressure must be a positive number</p>}
+
+</div>
+                <div className='md:ml-4 lg:ml-4'>
+                <label className="label"><span className="label-text">Glucose</span></label>
+<input {...register("glucose", { required: true, min: 1 })} type="number" placeholder="Enter your glucose" className="input input-bordered" />
+{errors.glucose?.type === 'required' && <p className="label-text-alt text-red-400 pt-2">Glucose is required 😶</p>}{errors.glucose?.type === 'min' && <p className="label-text-alt text-red-400 pt-2">Glucose must be a positive number</p>}
+
+<label className="label"><span className="label-text">Diabetic Pedigree Function</span></label>
+<input {...register("diabeticPedigreeFunction", { required: true, min: 1 })} type="number" placeholder="Enter your diabetic pedigree function" className="input input-bordered" />
+{errors.diabeticPedigreeFunction?.type === 'required' && <p className="label-text-alt text-red-400 pt-2">Diabetic pedigree function is required 😶</p>}{errors.diabeticPedigreeFunction?.type === 'min' && <p className="label-text-alt text-red-400 pt-2">Diabetic pedigree function must be a positive number</p>}
                 </div>
 
               </div>
               <div className="form-control mt-3 grid">
-                <button type="submit" className="btn btn-outline max-w-md place-self-center w-full">Register</button>
+                <button type="submit" className="btn btn-outline max-w-md place-self-center w-full">Submit</button>
               </div>
             </div>
           </div>
