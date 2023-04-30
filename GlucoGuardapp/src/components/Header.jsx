@@ -41,7 +41,6 @@ function Header() {
       </div>
       <div className="">
         <Link className=" normal-case text-xl  xs:text-center xs:text-3xl xs:justify-self-center" to="/">
-#adding the image logo
         <img src={myImage} title="logo" alt="Logo" width="100" height="100" />
         </Link>
       </div>
