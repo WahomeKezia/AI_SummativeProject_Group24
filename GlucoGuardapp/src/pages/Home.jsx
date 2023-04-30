@@ -11,8 +11,8 @@ function Home() {
         <div className="max-w-md">
           <h1 className="mb-5 text-5xl font-bold">Hello There </h1>
           <p className="mb-5 text-2xl text-info font-lobster"> 
-          We journey with you to monitor you Blood Sugar Levels 
-          with just two steps.Visit get your test and submit and get your test results  </p>
+          We journey with you to monitor your Blood Sugar Levels 
+          in just two steps.Visit get your test and submit and get your test results  </p>
         </div>
       </div>
     </div>

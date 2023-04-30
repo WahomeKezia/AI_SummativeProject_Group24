@@ -69,28 +69,40 @@ const RegisterMutation = useMutation({
               </div>
               <div className="card-body md:flex-row sm:flex-col lg:flex-row">
                 <div>
-                <label className="label"><span className="label-text">Age</span></label>
-<input {...register("age", { required: true, min: 1 })} type="number" placeholder="Enter your age" className="input input-bordered" />
-{errors.age?.type === 'required' && <p className="label-text-alt text-red-400 pt-2">Age is required 😶</p>}{errors.age?.type === 'min' && <p className="label-text-alt text-red-400 pt-2">Age must be a positive number</p>}
+                   <label className="label"><span className="label-text">Pregnancies</span></label>
+  <input {...register("pregnancies", { required: true, min: 0 })} type="number" placeholder="Enter the number of pregnancies" className="input input-bordered" />
+  {errors.pregnancies?.type === 'required' && <p className="label-text-alt text-red-400 pt-2">Pregnancies is required 😶</p>}{errors.pregnancies?.type === 'min' && <p className="label-text-alt text-red-400 pt-2">Pregnancies must be a non-negative integer</p>}
 
-<label className="label"><span className="label-text">BMI</span></label>
-<input {...register("bmi", { required: true, min: 1 })} type="number" placeholder="Enter your BMI" className="input input-bordered" />
-{errors.bmi?.type === 'required' && <p className="label-text-alt text-red-400 pt-2">BMI is required 😶</p>}{errors.bmi?.type === 'min' && <p className="label-text-alt text-red-400 pt-2">BMI must be a positive number</p>}
+  <label className="label"><span className="label-text">Glucose</span></label>
+  <input {...register("glucose", { required: true, min: 0 })} type="number" placeholder="Enter your glucose" className="input input-bordered" />
+  {errors.glucose?.type === 'required' && <p className="label-text-alt text-red-400 pt-2">Glucose is required 😶</p>}{errors.glucose?.type === 'min' && <p className="label-text-alt text-red-400 pt-2">Glucose must be a non-negative integer</p>}
 
-<label className="label"><span className="label-text">Blood Pressure</span></label>
-<input {...register("bloodPressure", { required: true, min: 1 })} type="number" placeholder="Enter your blood pressure" className="input input-bordered" />
-{errors.bloodPressure?.type === 'required' && <p className="label-text-alt text-red-400 pt-2">Blood pressure is required 😶</p>}{errors.bloodPressure?.type === 'min' && <p className="label-text-alt text-red-400 pt-2">Blood pressure must be a positive number</p>}
+  <label className="label"><span className="label-text">Blood Pressure</span></label>
+  <input {...register("bloodPressure", { required: true, min: 0 })} type="number" placeholder="Enter your blood pressure" className="input input-bordered" />
+  {errors.bloodPressure?.type === 'required' && <p className="label-text-alt text-red-400 pt-2">Blood pressure is required 😶</p>}{errors.bloodPressure?.type === 'min' && <p className="label-text-alt text-red-400 pt-2">Blood pressure must be a non-negative integer</p>}
 
+  <label className="label"><span className="label-text">Skin Thickness</span></label>
+  <input {...register("skinThickness", { required: true, min: 0 })} type="number" placeholder="Enter your skin thickness" className="input input-bordered" />
+  {errors.skinThickness?.type === 'required' && <p className="label-text-alt text-red-400 pt-2">Skin thickness is required 😶</p>}{errors.skinThickness?.type === 'min' && <p className="label-text-alt text-red-400 pt-2">Skin thickness must be a non-negative integer</p>}
 </div>
                 <div className='md:ml-4 lg:ml-4'>
-                <label className="label"><span className="label-text">Glucose</span></label>
-<input {...register("glucose", { required: true, min: 1 })} type="number" placeholder="Enter your glucose" className="input input-bordered" />
-{errors.glucose?.type === 'required' && <p className="label-text-alt text-red-400 pt-2">Glucose is required 😶</p>}{errors.glucose?.type === 'min' && <p className="label-text-alt text-red-400 pt-2">Glucose must be a positive number</p>}
+               
+  <label className="label"><span className="label-text">Insulin</span></label>
+  <input {...register("insulin", { required: true, min: 0 })} type="number" placeholder="Enter your insulin" className="input input-bordered" />
+  {errors.insulin?.type === 'required' && <p className="label-text-alt text-red-400 pt-2">Insulin is required 😶</p>}{errors.insulin?.type === 'min' && <p className="label-text-alt text-red-400 pt-2">Insulin must be a non-negative number</p>}
 
-<label className="label"><span className="label-text">Diabetic Pedigree Function</span></label>
-<input {...register("diabeticPedigreeFunction", { required: true, min: 1 })} type="number" placeholder="Enter your diabetic pedigree function" className="input input-bordered" />
-{errors.diabeticPedigreeFunction?.type === 'required' && <p className="label-text-alt text-red-400 pt-2">Diabetic pedigree function is required 😶</p>}{errors.diabeticPedigreeFunction?.type === 'min' && <p className="label-text-alt text-red-400 pt-2">Diabetic pedigree function must be a positive number</p>}
-                </div>
+  <label className="label"><span className="label-text">BMI</span></label>
+  <input {...register("bmi", { required: true, min: 0 })} type="number" placeholder="Enter your BMI" className="input input-bordered" />
+  {errors.bmi?.type === 'required' && <p className="label-text-alt text-red-400 pt-2">BMI is required 😶</p>}{errors.bmi?.type === 'min' && <p className="label-text-alt text-red-400 pt-2">BMI must be a non-negative number</p>}
+
+  <label className="label"><span className="label-text">Diabetes Pedigree Function</span></label>
+  <input {...register("diabeticPedigreeFunction", { required: true, min: 0 })} type="number" placeholder="Enter your diabetic pedigree function" className="input input-bordered" />
+  {errors.diabeticPedigreeFunction?.type === 'required' && <p className="label-text-alt text-red-400 pt-2">Diabetic pedigree function is required 😶</p>}{errors.diabeticPedigreeFunction?.type === 'min' && <p className="label-text-alt text-red-400 pt-2">Diabetic pedigree function must be a non-negative number</p>}
+
+  <label className="label"><span className="label-text">Age</span></label>
+  <input {...register("age", { required: true, min: 0 })} type="number" placeholder="Enter your age" className="input input-bordered" />
+  {errors.age?.type === 'required' && <p className="label-text-alt text-red-400 pt-2">Age is required 😶</p>}{errors.age?.type === 'min' && <p className="label-text-alt text-red-400 pt-2">Age must be a non-negative number</p>}
+</div>
 
               </div>
               <div className="form-control mt-3 grid">
