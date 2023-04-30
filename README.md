@@ -22,11 +22,46 @@ use.
 
 ● Deploy the web page on Azure App services 
 
+---
+
 ### Technologies Used :
 
-### Access:
+● Python for Model Training and Flask App 
 
+● ReactJs for the frontend Application 
+
+● Azure app service for cloud Deployment 
+
+---
+
+There are two part to this project , 
+
+1. Frontend Reactapp
+
+See the App Readme for informantion 
+
+2. Flaskapp  -the ML API  [here](https://github.com/WahomeKezia/FlaskApp_API)
+
+To run the Flask App use this commands 
+
+`git clone https://github.com/WahomeKezia/FlaskApp_API`
+
+ `pip install gunicorn`
+ 
+ `gunicorn wsgi:app`
+ 
+ This will run the application locally 
+ 
+ 
+ ### Deployed Access:
+ 
+
+Access the deployedapp [here](https://flaskappdiabetics.azurewebsites.net/)
+
+
+---
 ### Video Walkthrough:
+
 
 
 
