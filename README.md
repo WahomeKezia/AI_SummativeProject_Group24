@@ -33,7 +33,7 @@ use.
 ● Azure app service for cloud Deployment 
 
 ---
-### Access:
+### Local Access:
 
 There are two part to this project , 
 
@@ -50,12 +50,15 @@ To run the backend Flask App use this commands
  `gunicorn wsgi:app`
  
  This will run the application locally 
+ 
+ ---
+ 
+ ### Local Access:
+ 
 
-Or acces the deployed version [here]()
+Access the deployed version app [here](https://flaskappdiabetics.azurewebsites.net/)
 
  
- 
-
 
 ---
 ### Video Walkthrough:
