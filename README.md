@@ -66,5 +66,11 @@ Access the deployed ML API [here](https://flaskappdiabetics.azurewebsites.net/)
 [Video Demo](https://drive.google.com/file/d/15aVsCuoNw91fhdEDhYclNOFjJ85AoGCl/view?usp=sharing)
 
 
+About Us page :
+
+
+<img src="https://github.com/WahomeKezia/AI_SummativeProject_Group24/blob/main/Screenshot%202023-05-01%20at%2010.37.34.png"  title="AboutUs" alt="aboutus" width="600" height="600"/>
+
+
 
 
